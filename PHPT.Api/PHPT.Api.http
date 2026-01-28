@@ -1,0 +1,6 @@
+@PHPT.Api_HostAddress = http://localhost:5286
+
+GET {{PHPT.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

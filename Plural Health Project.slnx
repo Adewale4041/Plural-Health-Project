@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PHPT.Api/PHPT.Api.csproj" />
+  <Project Path="PHPT.Business/PHPT.Business.csproj" />
+  <Project Path="PHPT.Common/PHPT.Common.csproj" />
+  <Project Path="PHPT.Data/PHPT.Data.csproj" />
+</Solution>
