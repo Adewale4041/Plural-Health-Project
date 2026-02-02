@@ -4,6 +4,8 @@
 
 This project implements **Onion Architecture** (also known as Clean Architecture) with a custom naming convention that better reflects the project's domain and purpose.
 
+> 📊 **Visual Diagrams:** For detailed visual representations of the architecture, see [ONION-ARCHITECTURE-DIAGRAM.md](./docs/ONION-ARCHITECTURE-DIAGRAM.md)
+
 ---
 
 ## 📊 Project Structure Overview
