@@ -4,16 +4,24 @@ A comprehensive ASP.NET Core Web API for managing clinic appointments, patient b
 
 ##  Architecture
 
-The solution follows **Clean Architecture** principles with clear separation of concerns:
+The solution follows **Onion (Clean) Architecture** principles with clear separation of concerns using a custom naming convention.
 
 ### Project Structure
 
 ```
-PHPT.Common       - Shared models, enums, and constants
-PHPT.Data         - Data access layer (Entities, DbContext, Repositories)
-PHPT.Business     - Business logic layer (Services, DTOs, Validation)
-PHPT.Api          - Presentation layer (Controllers, API configuration)
+PHPT.Common       - Core/Domain Layer (Shared models, enums, constants)
+PHPT.Data         - Infrastructure Layer (Entities, DbContext, Repositories)
+PHPT.Business     - Application Layer (Services, Business Logic, Validation)
+PHPT.Api          - Presentation Layer (Controllers, API configuration)
 ```
+
+### Layer Dependencies (Inward Direction)
+```
+PHPT.Api → PHPT.Business → PHPT.Data → PHPT.Common
+(Outer)                                   (Core)
+```
+
+> 📖 **For detailed architecture explanation:** See [ARCHITECTURE.md](./ARCHITECTURE.md) for comprehensive documentation on how this project implements Onion Architecture, layer responsibilities, separation of concerns, and why the custom naming convention (Common/Data/Business/Api) is equivalent to traditional names (Core/Infrastructure/Application/Api).
 
 ##  Features
 
