@@ -21,7 +21,11 @@ PHPT.Api → PHPT.Business → PHPT.Data → PHPT.Common
 (Outer)                                   (Core)
 ```
 
-> 📖 **For detailed architecture explanation:** See [ARCHITECTURE.md](./ARCHITECTURE.md) for comprehensive documentation on how this project implements Onion Architecture, layer responsibilities, separation of concerns, and why the custom naming convention (Common/Data/Business/Api) is equivalent to traditional names (Core/Infrastructure/Application/Api).
+### 📚 Architecture Documentation
+
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Comprehensive explanation of how this project implements Onion Architecture, layer responsibilities, separation of concerns, and why the custom naming convention works
+- **[Visual Diagrams](./docs/ONION-ARCHITECTURE-DIAGRAM.md)** - ASCII diagrams showing architecture layers, request flow, and dependencies
+- **[Quick Reference](./docs/QUICK-REFERENCE.md)** - Practical guide for developers: "Where does my code go?"
 
 ##  Features
 
